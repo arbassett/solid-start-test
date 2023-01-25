@@ -2,14 +2,15 @@
   "name": "solidStart",
   "scripts": {
     "dev": "solid-start dev",
-    "build": "solid-start build",
+    "build": "solid-start build && node nft.js",
     "start": "solid-start start",
     "postinstall": "prisma generate"
   },
   "type": "module",
   "devDependencies": {
-    "solid-start-vercel": "^0.2.16",
+    "@vercel/nft": "^0.22.6",
     "solid-start-node": "^0.2.15",
+    "solid-start-vercel": "^0.2.16",
     "typescript": "^4.9.4",
     "vite": "^4.0.4"
   },
