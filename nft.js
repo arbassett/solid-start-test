@@ -53,7 +53,7 @@ functions.forEach(async (func) => {
 		}
 	}
 
-    const results = [...fileList].filter((file) => !file.includes(func))
+    const results = [...fileList].filter((file) => !file.includes(func) && file !== 'package.json');
 
     console.log('results',results);
 
