@@ -2,7 +2,7 @@
   "name": "solidStart",
   "scripts": {
     "dev": "solid-start dev",
-    "build": "solid-start build && node nft.js",
+    "build": "solid-start build",
     "start": "solid-start start",
     "postinstall": "prisma generate"
   },
@@ -12,7 +12,14 @@
     "solid-start-node": "^0.2.15",
     "solid-start-vercel": "^0.2.16",
     "typescript": "^4.9.4",
-    "vite": "^4.0.4"
+    "vite": "^4.0.4",
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^3.10.0",
+    "terser": "^5.16.1",
+    "fast-glob": "3.2.12",
+    "micromatch": "4.0.5"
   },
   "dependencies": {
     "@prisma/client": "^4.9.0",
